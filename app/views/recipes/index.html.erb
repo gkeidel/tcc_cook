@@ -1,9 +1,12 @@
-<body class="login">
-<%# <h1>Cook Now - Receitas</h1> %>
+<div class="figure">
 
+<h1>Cook Now - Receitas</h1>
+<table>
+<td>
 <div class="box">
-<h3>Coma Bem Para o Seu Bem!<h3>
-  
+
+<h2>Coma Bem Para o Seu Bem!<h2>
+  <div class="recipes">
     <% if user_signed_in? %>
 
     <%= render 'layouts/header' %>
@@ -17,11 +20,17 @@
       </header>
     </article>
   <% end %>
+  </td>
+    </div>
+    
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80", width=500px, height=500px>
+
   <% else %>
  
        <%= button_to "Faça seu Login", new_user_session_path, class:"login" %>
 
   <% end %>
   </div>
-</body>
+</div>
 

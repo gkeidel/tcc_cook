@@ -1,11 +1,11 @@
 <div class="container">
 <% if user_signed_in? %>
-  <%= menu_group do %>
  
-
+ 
+  <div class="nova-receita">
     <%= menu_item "Nova Receita", new_recipe_path %>
     <%= menu_item "Sair", destroy_user_session_path, method: :delete, class:"nav-link", data: {confirm: "Sair do CookNow?"} %>
-  <% end %>
+  </div>
   
   <%= form_tag recipes_path, method: :get, class:"navbar-form navbar-right" do %>
     <%= text_field_tag :query, params[:query], class: "navbar-form", placeholder: "Encontre uma receita" %>
