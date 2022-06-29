@@ -1,0 +1,5 @@
+<%= simple_form_for [ @recipe, @review ] do |f| %>
+  <%= f.label :Comentário %>
+  <%= f.text_area :content %>
+  <%= f.submit "Salvar Comentário", class: "btn btn-primary" %>
+<% end %>

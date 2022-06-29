@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(230, 230, 230);
+}
+.login {
+  background-image: url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  
+}
+.login {
+  background-color: rgb(116, 230, 23);
+  width: 240px;
+  height: 40px;
+}
+.sign-in {
+ 
+  background-image: url(https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1406&q=80);
+}
+
+.user-login {
+  background-color: aliceblue;
+  text-align: center;
+  font-size: larger;
+}
+

@@ -1,0 +1,27 @@
+<body class="login">
+<%# <h1>Cook Now - Receitas</h1> %>
+
+<div class="box">
+<h3>Coma Bem Para o Seu Bem!<h3>
+  
+    <% if user_signed_in? %>
+
+    <%= render 'layouts/header' %>
+
+  <% @recipes.each do |recipe| %>
+
+    <article>
+      <header>
+        <h3><%= link_to recipe.name, recipe_path(recipe) %></h3>
+        <%# imagem(recipe) %>
+      </header>
+    </article>
+  <% end %>
+  <% else %>
+ 
+       <%= button_to "Faça seu Login", new_user_session_path, class:"login" %>
+
+  <% end %>
+  </div>
+</body>
+
