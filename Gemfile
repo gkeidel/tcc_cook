@@ -48,6 +48,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'simple_form', '~> 5.1'
 gem 'i18n', '~> 1.10'
+gem 'pg_search', '~> 2.3', '>= 2.3.6'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

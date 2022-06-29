@@ -1,5 +1,6 @@
 <%= simple_form_for [ @recipe, @review ] do |f| %>
-  <%= f.label :Comentário %>
-  <%= f.text_area :content %>
+  <p><%= f.label :Insira_seu_comentário %></p>
+  <p><%= f.text_area :content, cols: 40, rows: 10 %></p>
+
   <%= f.submit "Salvar Comentário", class: "btn btn-primary" %>
 <% end %>
