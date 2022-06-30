@@ -26,10 +26,10 @@
   <% @recipe.reviews.each do |review| %>
     <li class="list-group-item">
       <%= review.content %>
-      <%= link_to "Remove",
+      <%= link_to "Remover",
                   review_path(review),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %>
+                  data: { confirm: "Deseja apagar esse comentário?" } %>
     </li>
   <% end %>
 </ul>
