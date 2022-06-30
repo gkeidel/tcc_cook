@@ -1,5 +1,3 @@
 class Review < ApplicationRecord
-  belongs_to :recipes
-
-  validates :content, presence: true
+  belongs_to :recipe
 end

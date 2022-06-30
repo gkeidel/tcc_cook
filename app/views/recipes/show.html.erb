@@ -1,27 +1,16 @@
+<div class="figure">
  <article>
   <header>
     <h3><%= @recipe.name %></h3>
         <%= imagem(@recipe) %>
   </header>
  
-  <p>
-    <i><b>Tipo:</b></i> <%= @recipe.kind %>
-  </p>
-  <p>
-    <i><b>Ingredientes:</b></i> <%= @recipe.stuff %>
-  </p>
-  <p>
-    <i><b>Calorias:</b></i> <%= @recipe.calories %>
-  </p>
-  <p>
-    <i><b>Modo de Preparo:</b></i> <%= @recipe.prepare_mode %>
-  </p>
-   <p>
-    <i><b>Porções:</b></i> <%= @recipe.portion %>
-  </p>
-   <p>
-    <i><b>Tempo de Preparo:</b></i> <%= @recipe.duration.strftime("%H:%M") %> min
-  </p>
+  <p><i><b>Tipo:</b></i> <%= @recipe.kind %></p>
+  <p><i><b>Ingredientes:</b></i> <%= @recipe.stuff %></p>
+  <p><i><b>Calorias:</b></i> <%= @recipe.calories %></p>
+  <p><i><b>Modo de Preparo:</b></i> <%= @recipe.prepare_mode %></p>
+  <p><i><b>Porções:</b></i> <%= @recipe.portion %></p>
+  <p><i><b>Tempo de Preparo:</b></i> <%= @recipe.duration.strftime("%H:%M") %> min</p>
 </article>
 
 <div class="btn-group" role="group" aria-label="Exemplo básico">
@@ -31,4 +20,4 @@
   <button type="button" class="btn btn-secondary"><%= link_to "Deletar", recipe_path(@recipe), method: :delete, class:"btn btn-danger", data: {confirm: "Confirmar exclusão?"}%></button>
  <button type="button" class="btn btn-secondary"><%= link_to "Comentar", new_recipe_review_path(@recipe) %>
 </div>
-
+</div>

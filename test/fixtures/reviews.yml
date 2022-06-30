@@ -2,8 +2,8 @@
 
 one:
   content: MyText
-  recipes: one
+  recipe: one
 
 two:
   content: MyText
-  recipes: two
+  recipe: two

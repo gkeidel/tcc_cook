@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_29_205920) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_30_001354) do
   create_table "pg_search_documents", force: :cascade do |t|
     t.text "content"
     t.string "searchable_type"
@@ -35,10 +35,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_29_205920) do
 
   create_table "reviews", force: :cascade do |t|
     t.text "content"
-    t.integer "recipes_id", null: false
+    t.integer "recipe_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["recipes_id"], name: "index_reviews_on_recipes_id"
+    t.index ["recipe_id"], name: "index_reviews_on_recipe_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,5 +53,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_29_205920) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "reviews", "recipes", column: "recipes_id"
+  add_foreign_key "reviews", "recipes"
 end

@@ -8,11 +8,8 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @recipe = Recipe.find(params[:recipe_id])
     @review.recipe = @recipe
-    if @review.save
-      redirect_to recipe_path(@recipe)
-    else
-      render :new
-    end
+    @review.save
+    redirect_to root_path
   end
 
   private
