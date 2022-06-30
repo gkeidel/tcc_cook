@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :recipes do
     resources :reviews, only: [ :new, :create ]
   end
+  resources :reviews, only: [ :destroy ]
   get "recipes/busca", to: "recipes#busca"
 end

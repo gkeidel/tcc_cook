@@ -20,4 +20,20 @@
   <button type="button" class="btn btn-secondary"><%= link_to "Deletar", recipe_path(@recipe), method: :delete, class:"btn btn-danger", data: {confirm: "Confirmar exclusão?"}%></button>
  <button type="button" class="btn btn-secondary"><%= link_to "Comentar", new_recipe_review_path(@recipe) %>
 </div>
+
+<h4>Comentários:</h4>
+<ul class="list-group">
+  <% @recipe.reviews.each do |review| %>
+    <li class="list-group-item">
+      <%= review.content %>
+      <%= link_to "Remove",
+                  review_path(review),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ul>
+
+
 </div>
+

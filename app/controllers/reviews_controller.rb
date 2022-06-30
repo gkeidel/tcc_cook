@@ -9,7 +9,13 @@ class ReviewsController < ApplicationController
     @recipe = Recipe.find(params[:recipe_id])
     @review.recipe = @recipe
     @review.save
-    redirect_to root_path
+    redirect_to recipe_path(@review.recipe)
+  end
+
+  def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+    redirect_to recipe_path(@review.recipe)
   end
 
   private
