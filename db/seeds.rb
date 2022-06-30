@@ -98,6 +98,32 @@ Recipe.create!([
     portion: "12",
     duration: "00:45:00",
     poster: "bolo.jpeg"
-    }
+    },
+
+
+
+
+
+
+    {
+      name: "Pão de aveia fit de frigideira",
+      stuff: "1/2 xícara de chá de farinha de aveia, 1/4 de xícara de chá de polvilho doce, Sal a gosto, 1/2 colher de chá de fermento em pó, 1/2 colher de sopa de azeite, 1/3 de xícara de chá de água",
+      calories: 230,
+      kind: "Café da Manhã",
+      prepare_mode: "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+      portion: "12",
+      duration: "00:45:00",
+      poster: "bolo.jpeg"
+      },
+      {
+        name: "Bolo para café da tarde",
+        stuff: "3 ovos, 2/3 de xícara de farinha com fermento, 1/2 xícara de açúcar refinado",
+        calories: 230,
+        kind: "Bolo",
+        prepare_mode: "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+        portion: "12",
+        duration: "00:45:00",
+        poster: "bolo.jpeg"
+        }
 
 ])
