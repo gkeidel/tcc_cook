@@ -47,7 +47,7 @@ Recipe.create!([
     prepare_mode: "Reúna todos os ingredientes; Higienize a berinjela, corte ela no meio e retire o miolo com a ajuda de uma colher; Pique o miolo e reserve; Em uma panela, adicione a carne moída, a cebola e refogue bem; Acrescente o miolo da berinjela picado, o tomate, o molho, a salsinha, o sal, a pimenta, misture bem e deixe cozinhar um pouco; Recheie as berinjelas com a carne moída e passe por cima, requeijão light; Disponha elas em uma forma, com um dedinho de água e leve para assar em forno preaquecido a 180 ºC por cerca de 20 minutos; Agora é só servir.",
     portion: "2",
     duration: "00:50:00",
-    poster: "berinjela-recheada-low-carb.jpg"
+    poster: "berinjela.jpeg"
   },
   {
     name: "Barrinhas de cereal",
