@@ -1,7 +1,9 @@
+<div class="figure">
 <%= simple_form_for [ @recipe, @review ] do |f| %>
   <p><%= f.label :Insira_seu_comentário %></p>
   <p><%= f.text_area :content, cols: 40, rows: 10 %></p>
 
-  <%= f.submit "Salvar Comentário", class: "btn btn-primary" %>
+  <%= f.submit "Salvar", class: "btn btn-primary" %>
+  <%= button_to "Cancelar", recipe_path(@recipe) %>
 <% end %>
-
+<div>

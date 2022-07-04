@@ -18,9 +18,18 @@ body {
 }
 
 .user-login {
-  background-color: aliceblue;
+  /* background-color: aliceblue;
   text-align: center;
-  font-size: larger;
+  font-size: larger; */
+
+  background-color: white;
+  width: 1000px;
+  text-align: -webkit-center;
+  padding: 15px;
+  font-family: 'Comic Sans MS', cursive;
+  border: 1px solid black;
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
+  margin: auto;
 }
 
 .figure{
@@ -59,4 +68,8 @@ body {
 
 .list-group {
   text-align: left;
+}
+
+.recipe-show{
+  column-count: 2;
 }

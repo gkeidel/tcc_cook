@@ -148,8 +148,8 @@ pt-BR:
       prompt: Por favor selecione
     submit:
       create: Criar Receita
-      submit: Salvar %{model}
-      update: Atualizar %{model}
+      submit: Salvar 
+      update: Salvar 
   number:
     currency:
       format:

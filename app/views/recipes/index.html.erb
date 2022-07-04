@@ -13,15 +13,17 @@
 
   <% @recipes.each do |recipe| %>
 
-  <div class="recipe-show">
     <article>
       <header>
+  <div class="recipe-show">
+
         <h3><%= link_to recipe.name, recipe_path(recipe) %></h3>
         <%= imagem(recipe) %>
+  </div>
+
       </header>
     </article>
   <% end %>
-  </div>
   </td>
     </div>
     
