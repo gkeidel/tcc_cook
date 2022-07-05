@@ -26,7 +26,7 @@ body {
   width: 1000px;
   text-align: -webkit-center;
   padding: 15px;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid black;
   box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
   margin: auto;
@@ -37,7 +37,7 @@ body {
   width: 1000px;
   text-align: -webkit-center;
   padding: 15px;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid black;
   box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
   margin: auto;
@@ -52,7 +52,7 @@ body {
   width: 600px;
   text-align: center;
   padding: 15px;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid black;
   box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
   margin: auto;
